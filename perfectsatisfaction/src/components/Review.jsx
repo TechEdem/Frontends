@@ -10,12 +10,12 @@ const slideImages = [
   {
     image: Person1,
     name: 'Mavis',
-    description: 'I am a full stack developer with a background in web development and a passion for building web applications.',
+    description: '"I am a full stack developer with a background in web development and a passion for building web applications."',
   },
   {
     image: Person2,
     name: 'Maxwell',
-    description: 'I am a full stack developer with a background in web development and a passion for building web applications.',
+    description: '"I am a full stack developer with a background in web development and a passion for building web applications."',
   },
   
   ];
@@ -41,8 +41,8 @@ function Review() {
                 <div className='image_container'>
                   <img src={each.image} alt='testimonial' className='slider'/>
                 </div>
-                <h2>{each.name}</h2>
                 <p>{each.description}</p>
+                <h2>{each.name}</h2>
               </div>
             </div>
             ))
@@ -54,14 +54,14 @@ function Review() {
   )
 }
 const Container = styled.div`
-padding: 10% 0%;
+padding: 5% 0%;
 h1{
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     padding: 2% 0%;
     color: #ffffff;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
 }
 
 .background{
@@ -78,19 +78,23 @@ h1{
   background-color: white;
 }
 .image_container{
-  padding: 3% 40%;
+  padding: 3% 45%;
 }
 .slider{
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
 .main_slider h2{
   text-align: center;
 }
 .main_slider p{
-  padding: 2%;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
+  padding: 1% 20%;
+  line-height: 40px;
 }
 @media (max-width: 760px){
   .title{

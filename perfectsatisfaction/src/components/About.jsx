@@ -58,6 +58,7 @@ padding: 5% 0%;
       justify-content: space-between;
     }
     .description{
+    width: 40%;
     padding: 1% 5%;
     
       h2{
@@ -103,6 +104,10 @@ padding: 5% 0%;
         line-height: 50px;
         font-weight: lighter;
       }
+    }
+
+    @media(max-width: 720px){
+    
     }
 `
 export default About

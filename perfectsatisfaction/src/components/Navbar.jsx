@@ -11,11 +11,11 @@ function Navbar() {
         <BrowserRouter>
             <nav>
                 <ul>
-                    <Link to="" className='link' smooth>Home</Link>
+                    <Link to="#home" className='link' smooth>Home</Link>
                     <Link to="#about" className='link' smooth>About</Link>
                     <Link to="#food" className='link'smooth>Explore Food</Link>
                     <Link to="#review" className='link'smooth>Review</Link>
-                    <Link to="" className='link'smooth>FAQ</Link>
+                    <Link to="#question" className='link'smooth>FAQ</Link>
                 </ul>
             </nav>
         </BrowserRouter>

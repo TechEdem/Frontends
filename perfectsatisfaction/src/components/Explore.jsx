@@ -91,5 +91,7 @@ const Container = styled.div`
         padding: 2% 0%;
         }
     }
+    
+    
 `
 export default Explore

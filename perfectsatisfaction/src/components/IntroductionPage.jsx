@@ -9,7 +9,7 @@ import Description from './Description'
 
 function IntroductionPage() {
   return (
-    <Container>
+    <Container id='home'>
 
       <div className='description-main'>
         <div className="description">

@@ -56,5 +56,11 @@ function Food(props) {
         cursor: pointer;
         width: 200px;
     }
+    @media(max-width: 720px){
+      img{
+        width: 500px
+        height: 500px
+      }
+    }
  `
 export default Food

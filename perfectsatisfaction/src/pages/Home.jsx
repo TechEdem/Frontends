@@ -6,6 +6,9 @@ import About from '../components/About'
 import {Fade} from 'react-reveal'
 import Explore from '../components/Explore'
 import Testimonies from '../components/Review'
+import Faq from '../components/Faq'
+import Subscribe from '../components/Subscribe'
+import Footer from '../components/Footer'
 
 function FinalPage() {
   return (
@@ -16,14 +19,14 @@ function FinalPage() {
         <About />
         <Explore />
         <Testimonies />
+        <Faq />
+        <Subscribe />
+        <Footer />
       </Fade>
     </Container>
   )
 }
 const Container = styled.div`
 
-.navigation{
-  position: fixed;
-}
 `
 export default FinalPage
