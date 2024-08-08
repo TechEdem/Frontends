@@ -96,26 +96,23 @@ h1{
   padding: 1% 20%;
   line-height: 40px;
 }
-@media (max-width: 760px){
+@media (max-width: 720px){
   .title{
     padding: 20% 1% 3% 1%;
   }
   h1{
     font-size: 31px;
   }
-  .typed{
-    font-size: 31px;
-    padding-left: 13%;
-  }
   .slide{
-    padding: 2% 3%; 
+    padding: 2% 3%;
   }
   .image_container{
-    padding: 8% 27%;
+    padding: 8% 40%;
   }
   .main_slider{
-    width: 93%;
-  }
+  width: 93%;
+  height: 35vh;
+}
   .main_slider p{
     padding-left: 13%;
   }

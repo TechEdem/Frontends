@@ -19,13 +19,18 @@ function IntroductionPage() {
           Orci pretium viverra ac orci id praesent blandit aenean in. Tempus netus vivamus feugiat 
           rutrum ut nunc quam faucibus. Lacinia eu non interdum libero turpis blandit lacus.
           </p>
+
+          <div className="description-image" id='one'>
+          <Fade top duration={2000} ><img src={IntroImage} alt='introimage' /></Fade>
+        </div>
+
           <div className='buttons'>
               <button >Get Started <img src={ShopCart} alt='shopcart' /></button>
               <button className='button1'>Learn More <img src={Arrow} alt='shopcart' /></button>
           </div>
         </div>
 
-        <div className="description-image">
+        <div className="description-image" id='two'>
           <Fade top duration={2000} ><img src={IntroImage} alt='introimage' /></Fade>
         </div>
       </div>
@@ -113,6 +118,17 @@ const Container = styled.div`
     justify-content: space-between;
     padding: 4% 20%;
     background-color: #FBF2A7;
+  }
+  #one{
+    display: none;
+  }
+  @media(max-width: 720px){
+  #one{
+    display: block;
+  }
+  #two{
+    display: none;
+  }
   }
 `
 export default IntroductionPage

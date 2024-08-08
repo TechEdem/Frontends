@@ -52,21 +52,20 @@ const Container = styled.div`
       margin-bottom: 10%;
     }
     .loader{
-      padding-left: 45%;
+      padding: 0% 45%;
     }
    }
-   @media screen and (max-width: 450px){
+   @media (max-width: 720px){
     .home{
       padding: absolute;
       top: 28%;
       left: 14%;
       img{
-        width: 300px;
-        height: 300px;
-        margin-bottom: 10%;
+        width: 400px;
+        height: 400px;
       }
       .loader{
-        padding-left: 45%;
+        padding: 30% 45%;
       }
      }
    }

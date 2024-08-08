@@ -22,6 +22,7 @@ function About() {
       </div>
 
       <div className="des1">
+      <Fade right duration={2000}><img src= {Des2} alt="description1" className='describe1'/></Fade>
       <div className="description">
         <h2>We make everything by hand with the best possible ingredients.</h2>
         <p>
@@ -39,7 +40,7 @@ function About() {
         </nav>
         <button>Learn More</button>
       </div>
-        <Fade right duration={2000}><img src= {Des2} alt="description1" /></Fade>
+        <Fade right duration={2000}><img src= {Des2} alt="description1" className='describe2'/></Fade>
       </div>
 
       <Description2 
@@ -56,11 +57,14 @@ padding: 5% 0%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+        .describe1{
+          display: none;
+        }
     }
     .description{
     width: 40%;
     padding: 1% 5%;
-    
+      
       h2{
         font-size: 40px;
         font-weight: bolder;
@@ -107,7 +111,18 @@ padding: 5% 0%;
     }
 
     @media(max-width: 720px){
-    
+      .des1{
+        .describe1{
+          display: block;
+        }
+          .describe2{
+            display: none;
+          }
+      }
+      .description{
+      width: 93%;
+      padding: 5% 5%;
+      }
     }
 `
 export default About

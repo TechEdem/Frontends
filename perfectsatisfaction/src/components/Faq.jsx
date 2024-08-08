@@ -84,7 +84,7 @@ h1{
         display: block;
     }
     .question{
-        width: 100%;
+        width: 92%;
         padding: 5%;
     }
 }

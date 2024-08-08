@@ -38,9 +38,13 @@ form{
   .email{
     width: 600px;
     height: 47px;
-    border: 2px solid grey;
+    border: 3px solid rgba(128, 128, 128, 0.649);
     border-radius: 10px 0px 0px 10px;
+    outline: none;
     padding: 0% 2%;
+    &:active{
+      border: 2px solid #faed7788;
+    }
   }
   .submit{
     width: 150px;
@@ -49,6 +53,14 @@ form{
     border: none;
     background-color: #FFF067;
     font-weight: bolder;
+  }
+}
+@media (max-width: 720px){
+  form{
+    padding: 7% 10% 10% 10%;
+    .email{
+      width: 390px;
+    }
   }
 }
 `

@@ -87,6 +87,8 @@ h3{
 }
 
 @media(max-width: 720px){
+    width: 100%;
+    
     .footer-links{
         display: none;
     }
