@@ -91,7 +91,9 @@ const Container = styled.div`
         padding: 2% 0%;
         }
     }
-    
+    @media (max-width: 720px){
+        padding: 2% 1%;
+    }
     
 `
 export default Explore

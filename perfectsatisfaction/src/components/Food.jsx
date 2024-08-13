@@ -6,7 +6,7 @@ function Food(props) {
   return (
     <Container>
       <Fade top duration = {2000}>
-      <img src={props.image} alt="background" />
+      <img src={props.image} alt="background" class/>
         <div className='describe1'>
             <h2>{props.title}</h2>
             <p>{props.more}</p>
@@ -58,9 +58,29 @@ function Food(props) {
     }
     @media(max-width: 720px){
       img{
-        width: 500px
-        height: 500px
+        width: 125%;
+        height: 500px;
       }
+      h2{
+        font-size: 42px;
+      }
+      p{
+          font-family: 'Poppins', sans-serif;
+          font-size: 18px;
+      }
+      h3{
+          font-size: 20px;
+          font-weight: bolder;
+          text-align: left;
+          font-family: 'Poppins', sans-serif;
+          line-height: 60px;
+          color: rgb(250, 65, 52);
+          span{
+          color: gray;
+          text-decoration: line-through;
+          padding-left: 10%;
+      }
+      
     }
  `
 export default Food
